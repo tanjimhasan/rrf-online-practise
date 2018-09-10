@@ -1,0 +1,23 @@
+/* ================ Global setting ================== */
+
+html{
+    @include media-breakpoint-between(xs, lg){
+        font-size: 12px;
+    }
+}
+
+a{
+    color: $anchor-text-color;
+    transition: $transition-time;
+    
+    &:hover{
+        color: $anchor-hover-color;
+        text-decoration: none;
+    }
+}
+
+
+.active{
+    background-color: $button-hover-bg-color;
+    color: $anchor-text-color;
+}
